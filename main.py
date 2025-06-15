@@ -1,4 +1,5 @@
 import numpy as np
+import argparse
 
 def read_file(filename):
 
@@ -13,7 +14,12 @@ def read_file(filename):
 
 
 if __name__ == "__main__":
-    k = 4
+    
+    parser = argparse.ArgumentParser(description="Find the largest product of k numbers in a grid.")
+    parser.add_argument('--k', type=int, default=4, help='Number of consecutive numbers for the product')
+    args = parser.parse_args()
+    
+    k = args.k
 
     grid = read_file('docs/grid2.txt')
 
