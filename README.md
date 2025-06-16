@@ -4,7 +4,7 @@ This repository contains the code for a code test done in preparation for an int
 
 ### How to run:
 
-Only requirement is a python environment with ```python>=3.10```.
+Only requirement is a python environment with ```python>=3.10``` and ```numpy>=2.0.0```.
 
 To run the program:
 
