@@ -21,3 +21,14 @@ It is also possible to test with different number of *k*, here is an example wit
 ```
 python main.py --k 5
 ```
+
+
+### Approach / Notes:
+
+First thought was to use 4 for loops for checking horizontally, vertically, diagonally down left and diagonally down right. 
+But to spare time, I used a for loop for the rows with a for loop for columns inside. This results in checking every index once(as starting point). To constrain the search, I used if-statements to avoid checking the edges when not necessary: 
+
+1. last 3 numbers in row horizontally
+2. last 3 numbers in column vertically
+3. last 3 numbers in row and column for diagonal down right search
+4. first 3 numbers and last 3 numbers for diagonal down left search.
